@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>ruin</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11775,29 +11775,44 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<!-- ---
-layout: page
-title: My personal page
-tagline: Hyeonju Kim
---- -->
-
-<h1 id="Hyeonju-Kim">Hyeonju Kim<a class="anchor-link" href="#Hyeonju-Kim">&#182;</a></h1><h2 id="About">About<a class="anchor-link" href="#About">&#182;</a></h2><p>I am a postdoctoral scholar in the Division of <a href="https://www.uthsc.edu/preventive-medicine/biostatistics.php">Biostatistics</a> 
-in the department of Preventive Medicine at the University 
-of Tennessee Health Science Center. My research interest is in high-dimensional analysis for large-scale data using optimization
-techniques, stochastic processes, and its modelling. I am currently working with Dr. <a href="http://senresearch.org/">\'Saunak Sen</a> on 
-developing an algorithm for multivariate linear mixed models in quantitative genetics and genomics.</p>
-<p>I was granted a PhD degree in <a href="https://statistics.arizona.edu/">Statistics</a> at the University of Arizona under the supervision of 
-Dr. <a href="https://en.wikipedia.org/wiki/Rabi_Bhattacharya">Rabi Bhattacharya</a> and worked on ruin problems in Economics and Insurance. 
-Under the supervision of Dr. <a href="https://math.unm.edu/~stanly/">Stanly Steinberg</a>, I had been awarded a master's degree in 
-<a href="https://math.unm.edu/">Applied Mathematics</a> at the University of New Mexico. My master's thesis was on understanding the pricing of 
-financial derivatives and numerical methods for solving PDEs.</p>
+<h1 id="Ruin-Problems">Ruin Problems<a class="anchor-link" href="#Ruin-Problems">&#182;</a></h1><h2 id="Survival-Probability-of-an-Economic-Agent-under-Production-Uncertainty">Survival Probability of an Economic Agent under Production Uncertainty<a class="anchor-link" href="#Survival-Probability-of-an-Economic-Agent-under-Production-Uncertainty">&#182;</a></h2><p>One problem in mathematical economics considers the probability of survival of an economic agent whose stock $X_n$ evolves according 
+to the Markov model $X_{n+1}=\epsilon_{n+1} (X_n  – c)$. Here $c$ is the constant level of consumption needed for the agent's 
+survival, and $\epsilon_n$ are i.i.d. multiplicative shocks for production in the next period. One is interested in the probability of 
+survival, namely,</p>
+<p>\begin{equation}   
+\epsilon(x)=(X_n&gt;c \,for\, all\, n│X_0=x), \, x&gt;c. 
+\end{equation}</p>
+<p>Numerous prominent economists have considered this problem<a href="#M1991"><sup>1</sup></a> <a href="#M1992"><sup>2</sup></a> <a href="#M1993"><sup>3</sup></a>. No analytical solutions are available in the non-trivial case 
+$E (log \epsilon_n) &gt; 0$, especially when $0 &lt; \epsilon(x) &lt; 1$ for all $x&gt;c$. One can show that $\epsilon(x)$ is determined by the 
+distribution function of a random variable, $Z=\sum_{n=1}^{\infty} (\epsilon_1 \epsilon_2 \cdots \epsilon_n)^{-1}$, which is obtained 
+by successive iteration. However, its distribution seems intractable. I have developed a method of exactly computing the moments of 
+$Z$ using the moments of the shock, $\epsilon_n$. This recursive method automatically determines when the moment of $Z$ first becomes 
+infinite. Based on this and a new method using a system of Chebyshev-type inequalities with different moments for different intervals 
+of $x$-values, each moment provides the best estimate for the corresponding interval. The resulting lower bounds are shown, by 
+extensive simulations, to provide good estimates of $\epsilon(x)$. This novel method also provides good estimates of $\epsilon_n (x)$,
+the probability of survival of an economic agent up to the finite time $n$ with an initial stock $x&gt;c$. In the same fashion, 
+$\epsilon_n (x)$ is determined by the distribution function of a random variable $Z_n=\sum_{j=1}^n (\epsilon_1 \epsilon_2 \cdots \epsilon_j)^{-1}$<a href="#R2015"><sup>4</sup></a> <a href="#K2015"><sup>5</sup></a>.</p>
 <ul>
-<li><a href="CV_Hyeonju_Kim1.pdf">CV</a></li>
+<li>The article can be found here.<a href="#R2015"><sup>4</sup></a>  </li>
 </ul>
-<h2 id="Research-Interests">Research Interests<a class="anchor-link" href="#Research-Interests">&#182;</a></h2><ul>
-<li><a href="fmulti-lmm.html">Multivariate Linear Mixed Models</a></li>
-<li><a href="ruin.html">Ruin Problems</a></li>
-</ul>
+<h2 id="Rate-of-Convergence-to-Equilibrium">Rate of Convergence to Equilibrium<a class="anchor-link" href="#Rate-of-Convergence-to-Equilibrium">&#182;</a></h2><p>A different topic is the estimation of the ruin probability in insurance in the general renewal model, especially under heavy-tailed 
+or sub-exponential claim size distributions. The literature here is vast and a great deal of activity is still going on in this area.<br>
+My focus is the estimation of finite time ruin probabilities. Particularly very little is known for the heavy-tailed case. Apart 
+from more conventional treatments in the finance/insurance literature, I have also been exploring the rather purely formal 
+mathematical connection between this problem and the problem of speed of convergence to steady state in the general Markov model known 
+as the Lindley-Spitzer process. The convergence rate is exponential in the case of light-tailed distributions. In the heavy-tailed 
+case the rate depends on the number of moments that are finite. If only a finite number of moments exist, then the rate is 
+polynomial. This leads to the possibility of estimating the ruin probability in insurance in finite time. Extensive empirical 
+studies showed the convergence rates for the both as the theory predicts <a href="#R2015-1"><sup>6</sup></a> <a href="#R2010"><sup>7</sup></a> <a href="#R2010-1"><sup>8</sup></a>.</p>
+<hr>
+<p><span id="M1991">[1] M. Majumdar and R. Radner. Linear models of survival under production uncertainty. <i>Economic Theory</i>, 1:13-30, 1991.</span></p>
+<p><span id="M1992">[2] M. Majumdar and R. Radner. Survival under production uncertainty: in “Equilibrium and Dynamics” (M. Majumdar, Ed.). pages 179-200,1992.</span></p>
+<p><span id="M1993">[3] T. Mitra and S. Roy. On some aspects of survival under production uncertainty. <i>Economic Theory</i>, 3(3):397-411, 1993.</span></p>
+<p><span id="R2015">[4] R. Bhattacharya, H. Kim, and M. Majumdar. Sustainability in the stochastic Ramsey model. <i>Journal of Quantitative Economics</i>, 2015. DOI: 10.1007/s40953-015-0020-5.</span> <a href="https://www.researchgate.net/publication/284579591_Sustainability_in_the_Stochastic_Ramsey_Model">article</a></p>
+<p><span id="K2015">[5] H. Kim. <i>Probabilities of Ruin in Economics and Insurance under Light- and Heavy-tailed Distributions.</i> PhD thesis, GIDP in Statistics, University of Arizona, USA, 2015.</span></p>
+<p><span id="R2015-1">[6] R. Bhattacharya and M. Majumdar. Ruin probabilities in models of resource management and insurance: A synthesis. <i>International Journal of Economic Theory</i>, 11(1):59-74, 2015.</span></p>
+<p><span id="R2010">[7] R. Bhattacharya, M. Majumdar, and N. Hashimazade. Limit theorems for monotone Markov process. <i>Sankhya A</i>, 72(1):170-190, 2010.</span></p>
+<p><span id="R2010-1">[8] R. Bhattacharya and R. R. Rao. <i>Normal Approximation and Asymptotic Expansions</i>, volume 64. SIAM, 2010.</span></p>
 
 </div>
 </div>
