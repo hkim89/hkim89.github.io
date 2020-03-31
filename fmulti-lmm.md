@@ -1,6 +1,3 @@
-
-
-```julia
 # Multivariate Linear Mixed Models (MLMM)
 
 ## Flexible Algorithm by Multivariate Linear Mixed Model 
@@ -49,9 +46,11 @@ am working on the data analysis of Outbred Diversity/Heterogeneous Stock (DO/HS)
 miniute with Dr. Vivek Philip at Jackson laboratory using the model developed with some tweaks.\\
                                                 
 
+* [Manuscript](https://www.biorxiv.org/content/10.1101/2020.03.27.012690v1) is available in BioRxiv.
+
 * Presentation slides can be found [here.](p30_gxe.pdf)
 
-* Github repository : [fMulti_lmm](https://github.com/hkim89/fMulti_lmm)                                            
+* Github repository : [fMulti-LMM](https://github.com/hkim89/fMulti-LMM)                                            
                                                 
                                                 
 
@@ -78,5 +77,3 @@ miniute with Dr. Vivek Philip at Jackson laboratory using the model developed wi
 <span id="goughF2">[7] M. M. Gray, M. D. Parmenter, C. A. Hogan, I. Ford, R. J. Cuthbert, P. G. Ryan, K. Broman, and B. A.     
         Payseur. Genetics of rapid and extreme size evolution in island mice. <i>Genetics</i>, 201(1):213-228, 2015.</span>
 
-
-```
