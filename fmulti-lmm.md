@@ -51,7 +51,11 @@ miniute with Dr. Vivek Philip at Jackson laboratory using the model developed wi
 
 * Presentation slides can be found [here.](p30_gxe.pdf)
 
+<<<<<<< HEAD
+* Github repository : [FlxQTL.jl](https://github.com/hkim89/FlxQTL.jl)                                            
+=======
 * Github repository : [flxQTL.jl](https://github.com/hkim89/flxQTL.jl)                                            
+>>>>>>> e25c2228780f7f5d255c7c5b67f01edddd95411e
                                                 
                                                 
 
