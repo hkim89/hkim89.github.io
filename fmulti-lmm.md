@@ -1,7 +1,7 @@
 
 # Multivariate Linear Mixed Models (MLMM)
 
-## Flexible Algorithm by Multivariate Linear Mixed Model 
+## Flexible Algorithm by Multivariate Linear Mixed Model for QTL Analysis
      
 A problem that arises in plant breeding is to understand individual genetic regions contributing to trait variation across 
 geographic space.  The data are high-dimensional and structured by a host of growing season phenotypes of plants, for instance, 
@@ -47,11 +47,15 @@ am working on the data analysis of Outbred Diversity/Heterogeneous Stock (DO/HS)
 miniute with Dr. Vivek Philip at Jackson laboratory using the model developed with some tweaks.\\
                                                 
 
-* [Manuscript](https://www.biorxiv.org/content/10.1101/2020.03.27.012690v1) is available in BioRxiv.
+* [Preprint](https://doi.org/10.1101/2020.03.27.012690) is available in BioRxiv.
 
 * Presentation slides can be found [here.](p30_gxe.pdf)
 
-* Github repository : [fMulti-LMM](https://github.com/hkim89/fMulti-LMM)                                            
+<<<<<<< HEAD
+* Github repository : [FlxQTL.jl](https://github.com/hkim89/FlxQTL.jl)                                            
+=======
+* Github repository : [flxQTL.jl](https://github.com/hkim89/flxQTL.jl)                                            
+>>>>>>> e25c2228780f7f5d255c7c5b67f01edddd95411e
                                                 
                                                 
 
