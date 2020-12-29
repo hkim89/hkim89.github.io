@@ -47,11 +47,11 @@ am working on the data analysis of Outbred Diversity/Heterogeneous Stock (DO/HS)
 miniute with Dr. Vivek Philip at Jackson laboratory using the model developed with some tweaks.\\
                                                 
 
-* [Manuscript](https://www.biorxiv.org/content/10.1101/2020.03.27.012690v1) is available in BioRxiv.
+* [Preprint](https://doi.org/10.1101/2020.03.27.012690) is available in BioRxiv.
 
 * Presentation slides can be found [here.](p30_gxe.pdf)
 
-* Github repository : [fMulti-LMM](https://github.com/hkim89/fMulti-LMM)                                            
+* Github repository : [FlxQTL.jl](https://github.com/hkim89/FlxQTL.jl)                                            
                                                 
                                                 
 
